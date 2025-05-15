@@ -1,9 +1,117 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Home</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cybersecurity Portal</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+    nav {
+      background-color: #333;
+      padding: 10px;
+      border-radius: 5px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-right: 20px;
+      font-weight: bold;
+      font-size: 16px;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    #content {
+      margin-top: 20px;
+      background: white;
+      padding: 25px;
+      border-radius: 5px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.12);
+    }
+    h1, h2 {
+      color: #222;
+    }
+    footer {
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #777;
+      text-align: center;
+      border-top: 1px solid #ddd;
+      padding-top: 10px;
+    }
+    .hint {
+      font-size: 0.85em;
+      color: #a00;
+      margin-top: 20px;
+      background-color: #fee;
+      padding: 10px;
+      border-left: 4px solid #a00;
+      display: none; /* Hidden by default */
+    }
+  </style>
 </head>
 <body>
-    <h1>Welcome to the Home Page</h1>
-</body>
+  <!-- todo: Properly secure static resources in WebFlux -->
+
+  <nav>
+    <a href="#home" id="menu-home">Home</a>
+    <a href="#about" id="menu-about">About</a>
+    <a href="#resources" id="menu-resources">Resources</a>
+    <a href="#contact" id="menu-contact">Contact</a>
+  </nav>
+
+  <section id="content">
+    <h1>Welcome to our Cybersecurity Portal</h1>
+    <p>
+      Our portal provides up-to-date information on cybersecurity threats, vulnerability research, 
+      and defensive techniques. Whether you're a developer, security analyst, or enthusiast, we aim to empower you 
+      with practical knowledge to protect your systems and data.
+    </p>
+
+    <h2>About Us</h2>
+    <p>
+      We are a community-driven platform focused on demystifying complex security topics 
+      such as authentication mechanisms, secure coding practices, and threat modeling.
+      Our team actively monitors advisories, CVEs, and real-world exploit scenarios to keep you informed.
+    </p>
+
+   <h2>Cybersecurity Insights</h2>
+<p>
+  In today’s hyper-connected world, cybersecurity is not just an IT issue — it's a critical component of business continuity and national security. 
+  Organizations must proactively protect their digital infrastructure against an ever-evolving landscape of threats.
+</p>
+<p>
+  Common attack vectors include phishing, malware, supply chain attacks, insider threats, and zero-day exploits. 
+  Implementing multi-layered security controls, ongoing staff training, and regular vulnerability assessments are key strategies for maintaining resilience.
+</p>
+<p>
+  Always remember: security is a process, not a product.
+</p>
+
+    <h2>Resources</h2>
+    <ul>
+            <li><a href="https://nvd.nist.gov/" target="_blank" rel="noopener noreferrer">NVD</a></li>
+            <li><a href="https://owasp.org/www-project-top-ten/" target="_blank" rel="noopener noreferrer">OWASP Top Ten Security Risks</a></li>
+    </ul>
+
+    <h2>Contact Us</h2>
+    <p>
+      Questions, suggestions, or want to contribute? Reach out to us at 
+      <a href="mailto:support@cybersecportal.example">support@cybersecportal.example</a>.
+    </p>
+
+    
+  </section>
+
+  <footer>
+    Powered by Spring 3.3.4
+  </footer>
+
+ </body>
 </html>

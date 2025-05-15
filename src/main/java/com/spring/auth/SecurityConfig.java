@@ -15,8 +15,8 @@ public class SecurityConfig {
     public SecurityWebFilterChain securityWebFilterChain(ServerHttpSecurity http) {
         return http
             .authorizeExchange(exchange -> exchange
-                .pathMatchers("/css/**", "/").permitAll()
-                .pathMatchers("/secret/**").authenticated()
+                .pathMatchers("/css/**","/public/**", "/").permitAll()
+                .pathMatchers("/config/**", "/admin/**").authenticated()
                 .anyExchange().authenticated()
             )
             .formLogin(Customizer.withDefaults()) // ✅ no deprecation, Spring 6+ way
